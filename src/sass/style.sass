@@ -5,17 +5,258 @@
 @import buttons
 
 
+.clearfix
+	&:before, &:after
+		content: ''
+		display: table
+	&:after
+		clear: both
+
+.no-pad
+	padding: 0 !important
+
+
+header
+	background: url('../images/bg.jpg')
+	background-size: cover
+	width: 100%
+	height: 100vh
+	position: relative
+
+
+.container
+	max-width: 1170px
+	margin: 0 auto
+	padding: 0 15px
+	&:after
+		content: ''
+		display: table
+		clear: both
+
+.container-fluid
+	margin: 0 auto
+	padding: 0 15px
+	&:after
+		content: ''
+		display: table
+		clear: both
+
+.top_nav_wrap
+	border-bottom: 1px solid $accent-color
+	position: relative;
+	padding: 35px 0 0
+	&:after
+		content: " "
+		display: table
+		clear: both
+
+.top_nav_left
+	float: left
+	ul
+		li
+			display: inline-block
+			margin-left: 40px
+			a
+				text-decoration: none
+				text-transform: uppercase
+				font-size: 11px
+				font-weight: bold
+				color: #000
+			&:first-child
+				margin-left: 0
+
+
+.top_nav_right
+	float: right
+	text-align: center
+	ul
+		li
+			display: inline-block
+			margin-right: 40px
+			a
+				text-decoration: none
+				text-transform: uppercase
+				font-weight: bold
+				color: #000
+				font-size: 11px
+				margin-top: -3px
+				display: block
+			img
+				width: 17px
+				height: auto
+			&:last-child
+				margin-right: 0
+
+.logo_wrap
+	position: absolute
+	top: 0
+	left: calc(50% - 89.5px)
+	background: $main-color
+
+.logo_img
+	display: block
+	background: url('../images/logo.png') no-repeat
+	background-position: center 10px
+	background-size: 100px
+	height: 150px
+	width: 175px
+
+.logo_addr
+	display: block
+	background: $accent-color
+	max-width: 175px
+	padding: 5px 20px
+	box-sizing: border-box
+	p
+		text-align: center
+		font-size: 10px
+		color: $main-color
+
+.phone
+	display: block
+	float: right
+	text-align: right
+	color: $main-color
+	margin-top: 80px
+	font-size: 30px
+	line-height: 30px
+	font-weight: bold
+	a
+		display: block
+		background: $main-color
+		color: #f3f3f1
+		font-size: 11px
+
+.title-wrapper
+	text-align: center
+	padding: 35px 60px
+	background: rgba(255,147,30,0.9)
+	margin-top: 50px
+	span
+		text-transform: uppercase
+		color: $accent-color
+		font-size: 18px
+		font-weight: normal
+	h1
+		color: #f3f3f1
+		font-size: 80px
+		line-height: 100px
+		font-weight: normal
+
+
+.controls-nav
+	position: relative
+	text-align: right
+	padding: 10px 0
+
+	.controls
+		position: absolute
+
+	.c-prev
+		right: 100px
+
+	.c-next
+		right: 50px
+
+
+.search_wrap
+	width: 100%
+	background: $main-color
+	color:
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+	padding: 20px 0
+
+.search_form
+	float: right
+	a
+		text-decoration: none
+		text-transform: uppercase
+		color: #f3f3f1
+		display: inline-block
+		padding-top: 45px
+		background: url('../img/more.png') center no-repeat
+		vertical-align: middle
+		margin: 0 20px 0 0px
+		font-size: 8px
+
+
+.left-nav
+	width: 150px
+	float: left
+	position: relative
+	left: 20%
+	top: 40px
+
+.site-menu
+	a
+		color: #000
+		font-size: 12px
+		font-weight: bold
+		line-height: 24px
+		text-transform: uppercase
+		cursor: pointer
+
+.image-bg
+	float: left
+
+
+// .image-bg
+// 	position: relative
+// 	width: 100%
+// 	background:
+// 		image: url('../images/img-1.png')
+// 		position: center
+// 		size: cover
+// 		repeat: no-repeat
+
+.location-section
+	padding: 60px 0
+
+.location-wrapper
+	position: relative
+
+	.location-title
+		font-size: 24px
+		float: left
+
+	.location-text
+		font-size: 16px
+		color: #000
+		padding: 10px
 
 
 
 
+.accomodation-wrapper
+	width: 60%
+	float: right
+	background: #f5f4f5
+	padding: 50px 75px 50px 40px
 
+.accomodation-item__content
 
+	.accomodation-image
+		position: relative
+		min-height: 1px
+		width: 40%
+		float: left
 
+	.accomodation-text
+		position: relative
+		min-height: 1px
+		width: 60%
+		float: left
 
-
-
-
+		h3
+			padding-top: 30px
+			margin-bottom: 50px
+		p
+			font-size: 15px
+			color: #000
+			margin-bottom: 40px
 
 
 
