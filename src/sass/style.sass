@@ -59,7 +59,7 @@ header
 			a
 				text-decoration: none
 				text-transform: uppercase
-				font-size: 11px
+				font-size: rem(11)
 				font-weight: bold
 				color: #000
 			&:first-child
@@ -78,7 +78,7 @@ header
 				text-transform: uppercase
 				font-weight: bold
 				color: #000
-				font-size: 11px
+				font-size: rem(11)
 				margin-top: -3px
 				display: block
 			img
@@ -109,7 +109,7 @@ header
 	box-sizing: border-box
 	p
 		text-align: center
-		font-size: 10px
+		font-size: rem(10)
 		color: $main-color
 
 .phone
@@ -118,14 +118,14 @@ header
 	text-align: right
 	color: $main-color
 	margin-top: 80px
-	font-size: 30px
-	line-height: 30px
+	font-size: rem(30)
+	line-height: rem(30)
 	font-weight: bold
 	a
 		display: block
 		background: $main-color
 		color: #f3f3f1
-		font-size: 11px
+		font-size: rem(11)
 
 .title-wrapper
 	text-align: center
@@ -135,12 +135,12 @@ header
 	span
 		text-transform: uppercase
 		color: $accent-color
-		font-size: 18px
+		font-size: rem(18)
 		font-weight: normal
 	h1
 		color: #f3f3f1
-		font-size: 80px
-		line-height: 100px
+		font-size: rem(80)
+		line-height: rem(100)
 		font-weight: normal
 
 
@@ -180,27 +180,34 @@ header
 		background: url('../img/more.png') center no-repeat
 		vertical-align: middle
 		margin: 0 20px 0 0px
-		font-size: 8px
+		font-size: rem(8)
 
+
+.nav-img-wrapper
+	width: 80%
+	float: right
 
 .left-nav
-	width: 150px
+	width: 18%
 	float: left
-	position: relative
-	left: 20%
-	top: 40px
+
+	.menu-wrap
+		padding-top: 40px
 
 .site-menu
 	a
 		color: #000
-		font-size: 12px
+		font-size: rem(12)
 		font-weight: bold
-		line-height: 24px
+		line-height: rem(24)
 		text-transform: uppercase
 		cursor: pointer
 
-.image-bg
+.imgbg
+	width: 82%
 	float: left
+	img
+		width: 100%
 
 
 // .image-bg
@@ -213,21 +220,32 @@ header
 // 		repeat: no-repeat
 
 .location-section
-	padding: 60px 0
+	padding: 150px 0 60px
 
 .location-wrapper
-	position: relative
+	width: 60%
+	float: right
 
 	.location-title
-		font-size: 24px
+		font-size: rem(24)
 		float: left
+		width: 20%
 
 	.location-text
-		font-size: 16px
+		position: relative
+		font-size: rem(16)
 		color: #000
 		padding: 10px
+		float: left
+		width: 60%
+		.location-image
+			position: absolute
+			top: -400px
+			left: 110px
 
 
+.accomodation-section
+	padding: 60px	0 0
 
 
 .accomodation-wrapper
@@ -236,6 +254,30 @@ header
 	background: #f5f4f5
 	padding: 50px 75px 50px 40px
 
+.accomodation-title
+	width: 85%
+	float: left
+
+.accomodation-nav
+	position: relative
+	width: 15%
+	float: left
+	color: $main-color
+	font-size: rem(14)
+	margin: 25px 0
+	text-align: center
+
+	.controls
+		position: absolute
+		top: 0
+
+	.c-prev
+		left: 0
+
+	.c-next
+		right: 0
+
+
 .accomodation-item__content
 
 	.accomodation-image
@@ -243,6 +285,15 @@ header
 		min-height: 1px
 		width: 40%
 		float: left
+		&:before
+			content: ''
+			+size(50px)
+			position: absolute
+			top: 15px
+			left: 15px
+			background-image: url('../images/acc-target.png')
+			background-repeat: no-repeat
+
 
 	.accomodation-text
 		position: relative
@@ -254,11 +305,125 @@ header
 			padding-top: 30px
 			margin-bottom: 50px
 		p
-			font-size: 15px
+			font-size: rem(15)
 			color: #000
 			margin-bottom: 40px
 
 
+.hightlights-section
+	padding: 25px 0 50px
+
+.hightlights-items-wrapper
+	position: relative
+	width: 96%
+	background: #F5F4F5
+
+	.hightlights-items
+		position: relative
+		width: 60%
+		float: right
+		margin-right: 55px
+
+.hightlights__header
+	border-bottom: 1px solid $accent-color
+	margin-bottom: 40px
+
+.hightlights-title
+	width: 85%
+	float: left
+
+	h2
+		color: $main-color
+
+.hightlights-block
+	padding-bottom: 40px
+	float: right
+
+.hightlights-item
+	width: 250px
+	height: 460px
+	position: relative
+	overflow: hidden
+	float: left
+	margin-left: 150px
+
+	.hightlights-text
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		background: $main-color
+		text-align: center
+		color: #fff
+		font-size: rem(16)
+		padding: 20px 30px
+		a
+			color: #fff
+
+
+.imgbg2
+	width: 66%
+	float: right
+	img
+		width: 100%
+
+.hightlights-krakow
+	width: 435px
+	float: left
+	text-align: justify
+	color: #000
+	font-size: rem(15)
+	h2
+		text-align: right
+
+.hightlights-2-item
+	position: relative
+	top: -270px
+	width: 360px
+	float: left
+	margin-left: 75px
+	border-top: 10px solid $accent-color
+
+	.hightlights-text
+		text-align: center
+		color: #fff
+		font-size: rem(16)
+		padding: 40px 35px 100px
+		background: $accent-color
+		h3
+			color: $main-color
+		a
+			color: $main-color
+
+
+.about-section
+	position: relative
+	background: url('../images/img-8.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center bottom
+	margin-top: -130px;
+
+	.about-bgi-wrapper
+		position: relative
+		z-index: 1
+
+.about-text
+	width: 960px
+	margin: 0 auto
+	background: #e5e5e5
+	color: $accent-color
+	text-align: center
+	font-size: rem(13)
+	padding: 10px
+	position: relative
+	z-index: 3
+	top: -70px
+
+.map-section
+	padding: 20px 0 50px
+	background: #fbfbfb
+	margin-bottom: 50px
 
 
 //ALWAYS END
