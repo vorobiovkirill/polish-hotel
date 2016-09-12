@@ -43,7 +43,7 @@ gulp.task('sass', function() { // Создаем таск Sass
 // // ===================================================
 gulp.task('libs', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'./bower_components/jquery/dist/jquery.min.js', // Берем jQuery
+		'bower_components/jquery/dist/jquery.min.js', // Берем jQuery
 		// сюда через заяпятую перечисляем все библиотеки
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
@@ -71,19 +71,22 @@ gulp.task('removebuild', function() {
 gulp.task('build', ['removebuild', 'sass', 'libs'], function() {
 
 	var buildCss = gulp.src('src/css/**/*')
-	.pipe(gulp.dest('build/css')) // Переносим css в build
+	.pipe(gulp.dest('build/css')); // Переносим css в build
 
 	var buildFonts = gulp.src('src/fonts/**/*') // Переносим шрифты в build
-	.pipe(gulp.dest('build/fonts'))
+	.pipe(gulp.dest('build/fonts'));
 
 	var buildJs = gulp.src('src/js/**/*') // Переносим скрипты в build
-	.pipe(gulp.dest('build/js'))
+	.pipe(gulp.dest('build/js'));
 
 	var buildHtml = gulp.src('src/*.html') // Переносим HTML в build
-	.pipe(gulp.dest('build'))
+	.pipe(gulp.dest('build'));
 
-	var buildImage = gulp.src('src/img/**/*') // Переносим Image в build
+	var buildImg = gulp.src('src/img/**/*') // Переносим Image в build
 	.pipe(gulp.dest('build/img'));
+
+	var buildImage = gulp.src('src/images/**/*') // Переносим Image в build
+	.pipe(gulp.dest('build/images'));
 
 });
 // // =============================
