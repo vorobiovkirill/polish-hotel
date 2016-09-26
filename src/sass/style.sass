@@ -15,8 +15,14 @@
 .no-pad
 	padding: 0 !important
 
+.mt100
+	position: relative
+	margin: -200px 0 0 0
 
-header
+.section
+	padding: 5px 0
+
+.main-header
 	background: url('../images/bg.jpg')
 	background-size: cover
 	width: 100%
@@ -251,16 +257,6 @@ header
 	img
 		width: 100%
 
-
-// .image-bg
-// 	position: relative
-// 	width: 100%
-// 	background:
-// 		image: url('../images/img-1.png')
-// 		position: center
-// 		size: cover
-// 		repeat: no-repeat
-
 .location-section
 	padding: 150px 0 60px
 
@@ -466,6 +462,130 @@ header
 	padding: 20px 0 50px
 	background: #fbfbfb
 	margin-bottom: 50px
+
+/*
+ ***************
+ * ROOMS
+ * *************
+ */
+
+.header-rooms
+	background: url('https://unsplash.it/1920/1080/?random')
+	background-size: cover
+	width: 100%
+	height: 70vh
+	position: relative
+
+.navigation
+	position: relative
+	width: 100%
+	margin-top: 50px
+	padding: 15px 20px
+	background: $accent-color
+
+	.logo
+		position: absolute
+		top: -45px
+
+	.rooms-nav
+		text-align: right
+		li
+			display: inline-block
+			margin-right: 20px
+			a
+				color: #fff
+				font-size: rem(18)
+				&:hover
+					color: $main-color
+
+	.social-menu
+		text-align: right
+		li
+			display: inline-block
+			margin-left: 10px
+
+.rooms-page
+	margin-bottom: 100px
+
+.section-rooms
+	.divider
+		width: 50%
+		position: absolute
+		bottom: 10px
+		left: 30%
+		height: 2px
+		background: $main-color
+		border: 0
+
+.section-rooms-r
+	.divider
+		width: 50%
+		position: absolute
+		bottom: 10px
+		right: 30%
+		height: 2px
+		background: $main-color
+		border: 0
+
+.rooms-item-photo
+	background: url('https://unsplash.it/1920/1080/?random')
+	background-size: cover
+	width: 100%
+	height: 100%
+	min-height: 400px
+	position: relative
+
+	.rooms-thumbs
+		display: inline-block
+		+position (relative, -30px null null 15px)
+		li
+			+size(110px)
+			margin-bottom: 5px
+			img
+				width: 100%
+
+.rooms-item-descr
+	+position (relative, 50px 125px null null)
+	width: 500px
+	height: 300px
+	background: $accent-color
+	font-size: rem(13)
+	padding: 30px
+
+	.room-title
+		color: $main-color
+		font-size: rem(18)
+		text-transform: uppercase
+		margin-bottom: 25px
+
+	.room-descr
+		text-align: justify
+
+	.room-book
+		margin-top: 50px
+		text-align: left
+		a
+			font-size: rem(14)
+
+.section-rooms-r
+
+	.rooms-thumbs
+		display: inline-block
+		+position (relative, -15px null null -15px)
+		float: right
+
+	.rooms-item-descr
+		+position (relative, 50px null null 0)
+
+		.room-title
+			display: block
+			text-align: right
+
+		.room-book
+			margin-top: 50px
+			text-align: right
+			a
+				font-size: rem(14)
 
 /*
  ***************
