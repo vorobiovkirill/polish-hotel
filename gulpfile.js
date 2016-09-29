@@ -20,6 +20,9 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 		server: { // Определяем параметры сервера
 			baseDir: 'src' // Директория для сервера - src
 		},
+		logPrefix: "Polish Hotel",
+		port: 1989,
+		startPath: 'index.html',
 		notify: false // Отключаем уведомления
 	});
 });
