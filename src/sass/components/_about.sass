@@ -1,0 +1,29 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.about-section
+	position: relative
+	min-height: 490px
+	background:
+		image: url('../images/img-8.png')
+		repeat: no-repeat
+		size: cover
+		position: center bottom
+
+	.about-bgi-wrapper
+		position: absolute
+		top: -40px
+		height: 530px
+		img
+			+size(100%)
+
+.about-text-wrapper
+	padding-bottom: 30px
+
+	.about-text
+		background: #e5e5e5
+		color: $accent-color
+		text-align: center
+		font-size: rem(13)
+		padding: 10px
+

@@ -1,0 +1,36 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.accomodation-wrapper
+	background: #f5f4f5
+	padding: 50px 75px 50px 40px
+
+.accomodation-item
+
+	.accomodation-item__content
+
+		.accomodation-image
+			position: relative
+			display: inline-block
+			float: left
+			&:before
+				content: ''
+				+size(50px)
+				position: absolute
+				top: 15px
+				left: 15px
+				background-image: url('../images/acc-target.png')
+				background-repeat: no-repeat
+
+		.accomodation-text
+			position: relative
+			display: inline-block
+			float: left
+
+			h3
+				padding-top: 30px
+				margin-bottom: 50px
+			p
+				font-size: rem(15)
+				color: #000
+				margin-bottom: 25px

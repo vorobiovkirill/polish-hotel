@@ -1,5 +1,5 @@
-@import bourbon
-@import vars
+@import 'bourbon'
+@import 'helpers/variables'
 
 /*==========  Desktop First  ==========*/
 
@@ -10,7 +10,28 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.accomodation-wrapper
+		padding: 20px 15px
+
+	.accomodation-item
+		.accomodation-item__content
+			.accomodation-text
+				h3
+					display: none
+
+	.accomodation-item__header
+		display: none
+
+	.hightlights-krakow-wrapper
+		.hightlights-krakow
+			text-align: left
+			margin-top: 250px
+
+	.map-wrapper
+		display: none
+
+	.hightlights-section
+		display: none
 
 
 /* Small Devices, Tablets */
