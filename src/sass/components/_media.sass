@@ -9,12 +9,110 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 1024px)
+
+	.main-header
+		background: url('../images/bg-m.jpg')
+		background-size: cover
+		background-position: center
+		width: 100vw
+		height: 100vh
+		position: relative
+
+		.top_nav_wrap
+			display: none
+
+		.phone-wrapper
+			display: none
+
+		.search_wrap
+			display: none
+
+		.title-wrapper
+			text-align: right
+			padding: 20px 40px
+			margin-top: 50px
+			background: rgba(255,255,255,0.70)
+			span
+				text-transform: uppercase
+				color: $accent-color
+				font-size: rem(18)
+				font-weight: normal
+			h1
+				color: $main-color
+				font-size: rem(40)
+				line-height: rem(44)
+				font-weight: bold
+			.btn-rooms
+				background: $main-color
+				padding: 5px 15px
+				font-size: rem(14)
+
+		.navigation
+			display: block
+			margin-top: 20px
+			.rooms-nav
+				li
+					vertical-align: middle
+
+			.logo
+				top: -25px
+
+			.phone
+				margin-right: 70px
+
+		.m-search_wrap
+			display: block
+			position: relative
+			background: rgba(255,147,30,0.90)
+			margin-top: 70px
+			padding: 20px 15px 5px
+
+			.m-search_form
+				.row
+					margin-bottom: 15px
+				input[type=text]
+					display: block
+					width: 100%
+					max-width: 100%
+					margin: 0
+					padding: 5px 0
+					background: rgba(255,255,255,0.50)
+				input[type=submit]
+					padding: 5px 20px
+					font-size: rem(14)
+				.more
+					text-decoration: none
+					text-transform: uppercase
+					color: #f3f3f1
+					display: inline-block
+					padding-top: 20px
+					background: url('../img/more.png') center no-repeat
+					vertical-align: middle
+					margin: 0 20px 0 0px
+					font-size: rem(8)
+
+		.controls-wrapper
+			display: none
+
+	.section-nav
+		display: none
+
+	.location-section
+		padding: 15px 0
+		.location-image
+			margin: 0
+			div
+				margin: 0
+
 	.accomodation-wrapper
 		padding: 20px 15px
 
 	.accomodation-item
 		.accomodation-item__content
+			.accomodation-image
+				&:before
+					left: 75%
 			.accomodation-text
 				h3
 					display: none
@@ -22,16 +120,44 @@
 	.accomodation-item__header
 		display: none
 
+	.hightlights-krakow-section
+		padding-bottom: 80px
+
 	.hightlights-krakow-wrapper
 		.hightlights-krakow
 			text-align: left
-			margin-top: 250px
+			margin-top: 100px
+		.hightlights-krakow-item
+			.hightlights-text
+				padding: 10px 15px 25px;
 
 	.map-wrapper
 		display: none
 
 	.hightlights-section
 		display: none
+
+	.map-section
+		background: #fff
+		margin-bottom: 0
+		padding: 0
+
+	.footer
+		background: #fff
+
+		.footer-top-wrapper
+
+			.f-logo, .f-menu
+				display: none
+
+			.soc-links
+				text-align: center
+
+		.footer-bot-wrapper
+			ul
+				li
+					display: block
+					margin-right: 0
 
 
 /* Small Devices, Tablets */
