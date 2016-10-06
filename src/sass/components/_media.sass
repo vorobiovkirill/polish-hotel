@@ -76,7 +76,8 @@
 					width: 100%
 					max-width: 100%
 					margin: 0
-					padding: 5px 0
+					border: 0
+					padding: 3px 0
 					background: rgba(255,255,255,0.50)
 				input[type=submit]
 					padding: 5px 20px
@@ -100,6 +101,8 @@
 
 	.location-section
 		padding: 15px 0
+		.feedback
+			display: block
 		.location-image
 			margin: 0
 			div
@@ -113,6 +116,7 @@
 			.accomodation-image
 				&:before
 					left: 75%
+					background-size: 35px
 			.accomodation-text
 				h3
 					display: none
@@ -167,12 +171,46 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	html
+		font-size: 8px
 
+	.main-header
+		.m-search_wrap
+			margin-top: 100px
+
+		.navigation
+			.phone
+				margin-right: 0
+			.icon
+				img
+					width: 20px
+					height: auto
+
+	.hightlights-krakow-wrapper
+		.hightlights-krakow-item
+			top: -120px
+
+	.about-section
+		min-height: 290px
+		.about-bgi-wrapper
+			height: 330px
+
+	.map-section
+		margin-top: -30px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+	.main-header
+		.m-search_wrap
+			margin-top: 50px
+
+		.title-wrapper
+			span
+				font-size: rem(16)
+			h1
+				font-size: rem(20)
+				line-height: rem(24)
+
 
 
 /*==========  Mobile First  ==========*/
